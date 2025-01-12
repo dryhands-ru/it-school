@@ -57,10 +57,10 @@ MIDDLEWARE = [
 
 
 # # Разрешить запросы с фронтенда
-# CORS_ALLOWED_ORIGINS = [
-#     'http://localhost:8080',  # Адрес вашего фронтенда
-# ]
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:8080',  # Адрес вашего фронтенда
+]
+# CORS_ALLOW_ALL_ORIGINS = True
 ROOT_URLCONF = 'vertex_school.urls'
 
 TEMPLATES = [
@@ -136,12 +136,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
 
-# Django REST Framework
-# REST_FRAMEWORK = {
-#     'DEFAULT_AUTHENTICATION_CLASSES': (
-#         'rest_framework_simplejwt.authentication.JWTAuthentication',
-#     ),
-# }
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
